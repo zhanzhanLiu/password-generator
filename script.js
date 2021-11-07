@@ -129,18 +129,18 @@ specialChar = specialChar.split("");
 
 
 
-var generatePassword = function(){
+function generatePassword (){
   // usable variable values
-  passwordLength = passwordLength();
-  typeValid = typeValid();
+  pwLength = passwordLength();
+  types = typeValid();
   var passwordText = [];
   var passwordType = [];
-  for (var i = 0; i < passwordLength; i++) {
+  for (var i = 0; i < pwLength; i++) {
     // select the type of character of i'th digit (0-lowercase, 1-uppercase, 2-number, 3-special character)
     var digitType = function(){
         type = Math.floor(Math.random()*4);
             // check if the user selects the type of character
-            if (!typeValid[type]){
+            if (!types[type]){
                 return digitType();
             }
             return type;
@@ -176,15 +176,15 @@ var generatePassword = function(){
     console.log(passwordText);
 
     // check if the password contains every type of characters selected by the user
-    for (i=0; i<typeValid.length; i++){
-        if (typeValid[i]){
+    for (i=0; i<types.length; i++){
+        if (types[i]){
             console.log(passwordType.includes(i));
             if (!passwordType.includes(i)){
                 return generatePassword();
             }
         }
     }
-    return passwordText.join("")
+    return passwordText.join("");
 
 }
 
@@ -194,12 +194,12 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  
+ 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  console.log(passwordText.value)
  
 
 }
