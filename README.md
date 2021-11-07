@@ -25,9 +25,9 @@ https://github.com/zhanzhanLiu/password-generator
 
 ## Screenshots 
 ![initial page](./assets/images/screenshot-initial.png)
-![first prompt asking length](./assets/images/screenshot-length.jpeg)
-![prompt asking types of character](./assets/images/screenshot-lower.jpeg)
+![first prompt asking length](./assets/images/screenshot-length.jpg)
+![prompt asking types of character](./assets/images/screenshot-lower.jpg)
 ![](./assets/images/screenshot-upper.png)
 ![](./assets/images/screenshot-number.png)
-![](./assets/images/screenshot-special.jpeg)
+![](./assets/images/screenshot-special.jpg)
 ![password generated shown on the window](./assets/images/screenshot-pw.png)
