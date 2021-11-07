@@ -2,7 +2,7 @@
 
 // function to ask about the password length
 var passwordLength = function () {
-    var length = window.prompt("Please choose the length of your passwork (the length should be between 8 and 128 characters)")
+    var length = window.prompt("Please choose the length of your password (the length should be between 8 and 128 characters)")
     
     // validate prompt answer
     if (length >= 8 && length <=128){
